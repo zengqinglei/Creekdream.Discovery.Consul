@@ -13,7 +13,7 @@ Install-Package Creekdream.Discovery.Consul
 // appsettings.json 配置如下：
 {
   "ConsulClient": {
-    "ClientAddress": "http://192.168.0.103:8500"
+    "Address": "http://192.168.0.103:8500"
     // 其他配置请参考：ConsulClientOptions.cs
   },
   "ConsulService": {
