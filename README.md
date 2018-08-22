@@ -30,7 +30,7 @@ services.AddConsul(_configuration.GetSection("ConsulClient"));
 services.AddConsul(
     config =>
     {
-        config.Address = new Uri(_configuration.GetValue<string>("ConsulClient:ClientAddress"));
+        config.Address = new Uri(_configuration.GetValue<string>("ConsulClient:Address"));
     });
 ```
 
