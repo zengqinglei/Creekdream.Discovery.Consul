@@ -33,13 +33,13 @@ namespace Creekdream.Discovery.Consul
         public int? Interval { get; set; } = 10;
 
         /// <summary>
-        /// 检查超时时间(默认：5s)
+        /// 检查超时时间(默认：10s)
         /// </summary>
-        public int? Timeout { get; set; } = 5;
+        public int? Timeout { get; set; } = 10;
 
         /// <summary>
-        /// 失败后取消注册服务(默认：5s)
+        /// 失败后取消注册服务(默认：20s)
         /// </summary>
-        public int? DeregisterCriticalServiceAfter { get; set; } = 5;
+        public int? DeregisterCriticalServiceAfter { get; set; } = 20;
     }
 }

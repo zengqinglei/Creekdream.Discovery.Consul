@@ -78,13 +78,13 @@ namespace Creekdream.Discovery.Consul
             var registration = new AgentServiceRegistration()
             {
                 Checks = new[] { httpCheck },
-                ID = Guid.NewGuid().ToString(),
+                ID = $"{options.ServiceName}-{options.ServiceUri.Host}:{options.ServiceUri.Port}",
                 Name = options.ServiceName,
                 Tags = options.Tags,
                 Address = options.ServiceUri.Host,
                 Port = options.ServiceUri.Port
             };
-
+            
             consulClient.Agent.ServiceRegister(registration).Wait();
             lifetime.ApplicationStopping.Register(() =>
             {
