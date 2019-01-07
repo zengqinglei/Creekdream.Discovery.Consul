@@ -4,6 +4,8 @@
 * 向Consul注册服务，并自动获取服务IP地址(也可配置)
 * 向Consul注册健康检查地址,自动获取IP地址(也可配置)
 
+**[升级日志](https://github.com/zengqinglei/Creekdream.Discovery.Consul/releases)**
+
 ##### 安装SDK
 ```
 Install-Package Creekdream.Discovery.Consul
@@ -48,13 +50,3 @@ app.UseConsul(
 ##### 注册后效果图如下：
 <img src="https://images2018.cnblogs.com/blog/451346/201808/451346-20180815000609695-1545801544.png" />
 
-### Change Log
-
-*v1.0.0 2018-08-21*
-
-**Features**
-*  支持注册服务到Consul
-*  支持注册心跳健康检查到Consul
-
-**Enhancements**
-*  支持以上服务自动获取IP地址,避免各服务器配置不一致
